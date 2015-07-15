@@ -38,3 +38,114 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
+
+@media only screen and (min-width: 40.063em) {
+
+  .logo-wrapper {
+    position: relative;
+  }
+
+  .logo-wrapper .logo {
+    width: 92px;
+    height:  92px;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: -2px;
+    margin-left: -30px;
+  }
+
+  // Right part
+  .top-bar-section ul.right {
+    width: 50%;
+    padding-left: 60px;
+  }
+
+  .top-bar-section ul.right li {
+    float:  left;
+  }
+
+  // Left part
+  .top-bar-section ul.left {
+    width:  50%;
+    padding-right: 60px;
+  }
+
+  .top-bar-section ul.left li {
+    float:  right;
+  }
+}
+
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+.hero {
+  background: url('http://static.pexels.com/wp-content/uploads/2014/07/beach-coast-holiday-2190-825x550.jpg') no-repeat center center;
+  background-size: cover;
+  height: 50vh;
+  overflow: hidden;
+  h1 {
+    color: #fff;
+    text-align: center;
+    @include vertical-align;
+  }
+}
+
+.footer {
+  background-color: #292c2f;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 4rem;
+  p {
+    &.slogan {
+      color: #8d9093;
+      font-size: 1.2rem;
+      margin: 0 0 1rem;
+    }
+    &.copywrite {
+      color: #8f9296;
+      font-size: 0.875rem;
+      margin: 0;
+    }
+  }
+  .links a {
+    list-style: none;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 3rem 0 2rem;
+    margin: 0;
+    &::after {
+      content: "•";
+      padding: 0 0.4rem 0 0.8rem;
+    }
+    &:last-child::after {
+      content: "";
+      padding: 0 0.4rem 0 0.8rem;
+    }
+  }
+}
+
+
+
+body {
+  background-image: url("../img/ghs.png");
+  background-attachment: fixed;
+}
+
+#panel1 {
+  margin-top: 25px;
+}
+#panel2 {
+  margin-top: 25px;
+}
+
+.location {
+  font-size: 15px;
+  color: grey;
+}

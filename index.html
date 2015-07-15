@@ -1,168 +1,157 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation</title>
+    <title>Gorham Schools</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
+    <link rel="stylesheet" href="scss/app.scss">
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
+
+    <!-- Navigation -->
+   <div class="contain-to-grid sticky">
+
+     <nav class="top-bar" data-topbar>
+       <ul class="title-area">
+         <li class="name">
+           <h1><a class="logo show-for-small-only" href="#"><img src="img/ram.png" /></a></h1>
+         </li>
+         <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+       </ul>
+
+       <section class="top-bar-section">
+
+         <div class="logo-wrapper hide-for-small-only">
+           <div class="logo">
+             <a href="/"><img src="img/ram.png"></a>
+           </div>
+         </div>
+
+         <!-- Right Nav Section -->
+         <ul class="right">
+           <li><a href="https://campus.gorhamschools.org/campus/portal/gorham.jsp">Portal</a></li>
+           <li><a href="https://campus.gorhamschools.org/campus/gorham.jsp">Teacher Portal</a></li>
+           <li><a href="#">About</a></li>
+         </ul>
+
+         <!-- Left Nav Section -->
+         <ul class="left">
+           <li class="has-dropdown">
+             <a href="#">Schools</a>
+             <ul class="dropdown">
+               <li><a href="http://goghs.org/">High School</a></li>
+               <li><a href="http://www.gorhammaccentral.com/">Middle School</a></li>
+               <li class="has-dropdown">
+                 <a href="#">Elementary Schools</a>
+                 <ul class="dropdown">
+                   <li><a href="#">Village</a></li>
+                   <li><a href="#">Great Falls</a></li>
+                   <li><a href="#">Narragansett</a></li>
+                 </ul>
+               </li>
+             </ul>
+           </li>
+           <li class="has-dropdown">
+             <a href="#">Departments</a>
+             <ul class="dropdown">
+               <li><a href="#">Technology</a></li>
+               <li><a href="#">Athletic</a></li>
+               <li><a href="#">Maintence</a></li>
+               <li><a href="#">Food Service</a></li>
+             </ul>
+           </li>
+         </ul>
+
+       </section>
+     </nav>
+
+    </div><!-- /navigation -->
+
+
     <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
+
+      <div class="large-4 columns">
+        <div class="panel" id="panel1">
+          <h5>Infinite Campus</h5>
+          <ul class="side-nav">
+            <li><a href="#">Portal</a></li>
+            <li><a href="#">Teacher Login</a></li>
+            <li><a href="#">Students are awesome</a></li>
+            <li><h5>Departments</h5></li>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Athletic</a></li>
+            <li><a href="#">Maintence</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Other</a></li>
+          </ul>
+        </div>
       </div>
+
+      <div class="large-8 columns">
+        <div class="panel" id="panel2">
+          <h2>Gorham Schools</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <a class="button round" href="#">Learn more</a>
+        </div>
+
+        <div class="panel">
+          <h3>Who is Gorham Schools?</h3>
+          <h5>Description of Gorham Schools...</h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+
+
     </div>
-    
+
     <div class="row">
       <div class="large-12 columns">
         <div class="panel">
-          <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-          <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-          <p>Once you've exhausted the fun in this document, you should check out:</p>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 medium-push-2 columns">
-              <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-            </div>
-            <div class="large-4 medium-4 medium-pull-2 columns">
-              <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-            </div>        
-          </div>
+          <h3>Our Schools:</h3>
+          <ul class="large-block-grid-2">
+            <li><a href="#"><img src="img/ghs.png"></a></li>
+            <li><a href="#"><img src="img/ghs.png"></a></li>
+            <li><a href="#"><img src="img/ghs.png"></a></li>
+            <li><a href="#"><img src="img/ghs.png"></a></li>
+            <li><a href="#"><img src="img/ghs.png"></a></li>
+          </ul>
         </div>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
-
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="callout panel">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
-        
-        <hr />
-                
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <div class="row collapse">
-                <label>Input Label</label>
-                <div class="small-9 columns">
-                  <input type="text" placeholder="small-9.columns" />
-                </div>
-                <div class="small-3 columns">
-                  <span class="postfix">.com</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Select Box</label>
-              <select>
-                <option value="husker">Husker</option>
-                <option value="starbuck">Starbuck</option>
-                <option value="hotdog">Hot Dog</option>
-                <option value="apollo">Apollo</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-6 medium-6 columns">
-              <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-            </div>
-            <div class="large-6 medium-6 columns">
-              <label>Check these out</label>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
-            </div>
-          </div>
-        </form>
-      </div>     
-
-      <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="small button">Simple Button</a><br/>
-        <a href="#" class="small radius button">Radius Button</a><br/>
-        <a href="#" class="small round button">Round Button</a><br/>            
-        <a href="#" class="medium success button">Success Btn</a><br/>
-        <a href="#" class="medium alert button">Alert Btn</a><br/>
-        <a href="#" class="medium secondary button">Secondary Btn</a></p>           
         <div class="panel">
-          <h5>So many components, girl!</h5>
-          <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-          <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>          
+          <h3>Other:</h3>
+          <p>Hello,world!</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
         </div>
       </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="row">
+        <div class="small-12 columns">
+          <p class="slogan">"The Gorham schools are committed to the belief that all of our students will find success in school"</p>
+          <p class="links">
+            <a href="#">District Home</a>
+            <a href="#">Portal</a>
+            <a href="#">Schools</a>
+            <a href="#">About</a>
+            <a href="#">Faq</a>
+            <a href="#">Contact</a>
+          </p>
+          <p class="location">Office of the Superintendent of Schools</p>
+          <p class="location">75 South Street, Suite #2 ~ Gorham, Maine 04038</p>
+          <p class="copywrite">Copyright &copy; Gorham School District | 2015</p>
+          <p class="copywrite">Website designed & developed by Ben Swift</p>
+        </div>
+      </div>
+    </footer>
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
